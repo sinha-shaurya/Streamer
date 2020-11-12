@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="Hi!"
+        android:textColor="#1B2B68"
+        android:textSize="48sp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginHorizontal="20dp"
+        android:text="Create a new account"
+        android:fontFamily="@font/roboto"
+        android:textColor="#1B2B68"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:id="@+id/LinearLayout1"
+        android:layout_below="@+id/textView1"
+        >
+
+        <EditText
+            android:id="@+id/editTxtEmailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edit_text"
+            android:hint="Email ID"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/editTxtRegistrationNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/edit_text"
+            android:hint="Registration No."
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/editTxtEmailLearnerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/roboto"
+            android:hint="Email- Learner ID"
+            android:paddingStart="10dp" />
+
+        <LinearLayout
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <RelativeLayout
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text"
+                android:layout_marginEnd="5dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_calender"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:id="@+id/datePicker"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of birth"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/txtDate"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text"
+                android:layout_marginStart="5dp"
+                >
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/gender_array"
+                    android:autofillHints="Gender"
+                    android:id="@+id/spinnerGender"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/editTxtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:inputType="number"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/edit_text"
+            android:hint="Contact Number"
+            android:paddingStart="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxForTerms"
+                android:checked="true"
+                android:theme="@style/MyCheckBox"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I accept the terms and conditions"
+                android:textSize="18dp"
+                android:textColor="#62000000"
+                android:fontFamily="@font/roboto"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:fontFamily="@font/roboto"
+        android:background="@drawable/login_button"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Already Registered? Login"
+        android:textColor="#007FFF"
+        android:fontFamily="@font/roboto"
+        android:textSize="18dp" />
+
+</RelativeLayout>

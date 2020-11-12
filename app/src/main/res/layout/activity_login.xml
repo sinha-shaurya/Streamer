@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Welcome!"
+        android:textColor="#1B2B68"
+        android:textSize="48sp"
+        android:fontFamily="@font/roboto"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Log in to continue"
+        android:textColor="#1B2B68"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTxtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:background="@drawable/edit_text"
+        android:hint="Email ID / Registration No."
+        android:fontFamily="@font/roboto"
+        android:paddingStart="10dp" />
+
+    <EditText
+        android:id="@+id/editTxtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTxtLogin"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/edit_text"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="10dp" />
+
+    <Button
+        android:id="@+id/btnLoginIn"
+        android:layout_width="285dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/editTxtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/roboto"
+        android:background="@drawable/login_button"
+        android:text="Login"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginIn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/roboto"
+        android:text="Forgot password?"
+        android:textColor="#007FFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/roboto"
+        android:text="Don't have an account? Register"
+        android:textColor="#007FFF"
+        android:textSize="18dp" />
+
+</RelativeLayout>

@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Streamer" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Streamer" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/login_button</item>
+        <item name="colorPrimaryVariant">@color/action_bar</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorControlNormal">#4DC4C4C4</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlActivated">@color/login_button</item> <!-- activated color change as you wish -->
+        <item name="android:textColor">#FFFF3F3C</item>
+    </style>
+
 </resources>

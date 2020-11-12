@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Streamer</string>
+
+    <string-array name="gender_array">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Have not decided</item>
+        <item>Gay</item>
+    </string-array>
+
 </resources>
